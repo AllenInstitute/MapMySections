@@ -23,7 +23,7 @@ Transgenic lines and viral tools provide highly valuable resources for targeting
 
 This challenge includes images and associated cell type specificity for anonymized genetics tools from the [Genetics Tools Atlas](https://portal.brain-map.org/genetic-tools/genetic-tools-atlas), a searchable web resource representing information and data on enhancer-adeno-associated viruses (enhancer AAVs) and mouse transgenes. Multiple modalities for summarizing data are included as part of the atlas, but only coronal sections collected using Serial Two-Photon Tomography (STPT) sections will be directly included as part of the challenge.  Cell type specificity is assessed by applying single cell RNA-sequencing (SmartSeqV4) on fluorescently labeled cells from each genetic tool, and then mapping these cells to the published taxonomy of cell types in whole mouse brain [(Yao et al, 2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10719114/), which are available in the [Allen Brain Cell Atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mapmysections)**
 
 ## Primary image series data access
 
@@ -54,7 +54,7 @@ Other columns ***TO BE OMITTED BEFORE POSTING***:
 
 The test data set includes the same information as the training data set for an additional ***(#####)*** genetic tools, except that the column called “Cell Type Assignments” is left blank.  To complete this challenge, please submit cell type assignments as described in the Entry Details section.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mapmysections)**
 
 ## Restricting analysis to targeted brain regions (typically VISp)
 
@@ -63,7 +63,7 @@ Unless otherwise noted, the challenge focuses only on cell types in VISp, althou
 * **Image registration to Allen Common Coordinate Framework (CCF)**:  All STPT image series are registered to the CCF, meaning that every X-Y-Z location in STPT images can be assigned an X-Y-Z location (“voxel”) in a standard anatomical reference space along with an associated brain region name. Similarly, MERFISH image series on the [Allen Brain Cell Atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas) are also registered to the CCF, meaning each voxel also contains it’s cell type composition (from one mouse).  More details on CCF registration and data access are available <ins>***TBD TBD TBD***</ins>.
 * **Known spatial localization of cell types**: The relationship between cell types and brain regions and cell types (including VISp) is described in detail in [Yao et al 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10719114/).  These relationships can also be explored interactively using [Annotation Comparison Explorer](https://sea-ad.shinyapps.io/ACEapp/) (“Mouse cell type classification” - “Spatial localization of brain cell types”).  Finally, a table listing all cell types found in mouse VISp is provided <ins>***TBD TBD TBD***</ins>.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mapmysections)**
 
 ## Spatial localization of mouse brain cell types
 
@@ -72,19 +72,24 @@ The mouse whole brain transcriptomics cell type atlas contains 5,322 cell types 
 In addition to gene tools image series, cell type information from this atlas **is required or recommended to succeed in this challenge**. The spatial location of every mouse cell type can be interactively explored using the Allen Brain Cell Atlas [at this link](https://knowledge.brain-map.org/abcatlas#AQIBSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADAAQBAAKDgDx7g46YHgOEuBCEhSrCAwQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJGUzAwRFhWMFQ5UjFYOUZKNFFFAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUFQOEpOTjVMWUFCR1ZNR0tZMUIAAlExTkNXV1BHNkZaMEROSVhKQlEAAwAEAQECgazlhIG8aWIDhMwEVIT%2BMccABQAGAQECRlMwMERYVjBUOVIxWDlGSjRRRQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D). 
 
 Spatial data and associated metadata can be accessed for off-line use in the following locations:
+* **MERFISH raw data images**: ***I don't know if these exist??? If so, would be useful to share.***
 * **CCF locations of mouse brain cells**: Point-by-point mapping of the location of each cell in the original MERFISH coordinate space and the CCF [**is available here**](https://alleninstitute.github.io/abc_atlas_access/descriptions/MERFISH-C57BL6J-638850-CCF.html). These data include cell type assignments for each cell, and this page also includes links to related data sets and to Jupyter notebooks for data access.
 * **Code comparing cell types and anatomic structures**: Specifically, [this Jupyter notebook](https://alleninstitute.github.io/abc_atlas_access/notebooks/merfish_ccf_registration_tutorial.html) describes how to access and use the data above, relating CCF coordinates and mouse brain cell types.
 * **Acronym list**: [This table](https://brainmapportal-live-4cc80a57cd6e400d854-f7fdcae.divio-media.net/filer_public/c8/42/c8421c8e-72d8-4781-8505-8770e88671a7/whole_mouse_brain_acronym_june_2024.xlsx) includes a list of acronyms and abbreviations for brain regions, genes, and cell types used in mouse whole brain cluster names, along with identifiers for relevant data sources (e.g., Mouse Brain Atlas, UBERON, CL).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mapmysections)**
 
 ## Key considerations
 
-* Paragraph about what folks are seeing in the fluorescent images
-* Links to the acronym tables
-* Link to code from Lydia's team about how to access image data
+***THIS SECTION NEEDS MAJOR UPDATES***
+<ins>Paragraph about what folks are seeing in the fluorescent images, along with challenges and pitfalls. </ins>
+* The images show XXX in the green channel and YYYY in the red channel, but sometimes there is bleed over.
+* Comparing cell centroids (ABC Atlas) to cytoplasm reporter, potential problem with dense labeling and cell overlap
+* Genetic tools can label any number of cell types across the taxonomy
+* Weak vs. strong labeling sometimes
+* We are sidestepping the challenge of aligning individual images to the MERFISH reference as all challenge data includes Z-stack information
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mapmysections)**
 
 ### Useful links
 
@@ -92,6 +97,6 @@ Spatial data and associated metadata can be accessed for off-line use in the fol
 * ABC Atlas: https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas 
 * MapMyCells: https://portal.brain-map.org/atlases-and-data/bkp/mapmycells 
 * MapMySpikes: https://alleninstitute.org/events/mapmyspikes/ 
-* <ins>***[LIKELY NEED MANY MORE, TBD]***</ins>
+* <ins>***(LIKELY NEED MANY MORE, TBD). Maybe links to relevant CCF community forum posts and or external tools (Priya's project)?***</ins>
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#mapmysections)**

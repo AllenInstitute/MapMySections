@@ -40,9 +40,9 @@ In this spreadsheet, each row is a different genetic tool, and columns correspon
 * **Brain Region Targeted**: The anatomic structure(s) for which cell type assignments have been tested.  For the vast majority of cases this will be VISp (primary visual cortex), although a few genetic tools focus on basal ganglia or the entire brain.
 * **Difficulty**: A qualitative assessment of how difficult it would be for an expert annotator to identify assigned cell types directly from the image.  Examples of “Easy” image series would be a genetic tool restricted to cortical layer 4 which maps to excitatory types only found in layer 4, whereas a “Hard” genetic tool could show more scattered expression (e.g., inhibitory neurons not restricted to layer 1) or show expression in multiple unrelated cell populations. Genetic tools tagged as “Medium” would be somewhere between.
 * **(OTHER LABEL ASSESSMENTS??)**: Other assessments about the labeling may or may not be included. These could include: LABEL_Strength (strong, weak, none, etc), columns about predicted gene targeting, cross-species conservation, anything else?
-* **STPT Image Series Data**: Link to the image series in omi-zarr format. This is the primary data required for the challenge.  See THIS LINK TO A NEW JUPYTER NOTEBOOK for how to access and use these data.
+* **STPT Image Series Data**: Link to the image series in omi-zarr format. This is the primary data required for the challenge.  See <ins>***THIS LINK TO A NEW JUPYTER NOTEBOOK***</ins> for how to access and use these data.
 * **STPT Image Series Visualization**: Link to same data for visualization using Neuroglancer
-* **CCF-registered STPT Image Data**: Link to image file containing intensities of red and green channels for each 10um CCF voxel in XXX format. See THIS LINK TO A DIFFERENT NEW JUPYTER NOTEBOOK for how to access and use these data.
+* **CCF-registered STPT Image Data**: Link to image file containing intensities of red and green channels for each 10um CCF voxel in XXX format. See <ins>***THIS LINK TO A DIFFERENT NEW JUPYTER NOTEBOOK***</ins> for how to access and use these data.
 
 Other columns ***TO BE OMITTED BEFORE POSTING***:
 

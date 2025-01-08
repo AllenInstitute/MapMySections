@@ -1,4 +1,47 @@
-### Background
+*(This is a placeholder page for the main MapMySections page on alleninstitute.org)*
+
+## MapMySections general info
+
+**Short name**: MapMySections Data Challenge 
+**Tagline**: assign cell types to sparsely labeled fluorescent images
+**Long name**: MapMySections Data Challenge: create a “MapMyCells”-like algorithm and user interface for matching fluorescent images of mouse genetic tools to corresponding cell types on the Allen Brain Cell Atlas
+
+### Meta Description
+When you see a tissue section and only a fraction of the cells are stained, how can you tell which kind of cells are represented? We are seeking tools that can accurately make this connection and relate it to existing knowledge of cell types on Allen Brain Map.
+
+### Image [DRAFT!!!!!!!]
+
+![image](https://github.com/user-attachments/assets/becb37da-3ad8-4546-b0d9-1ce90c48b7a4)
+ 
+### Overview
+
+When you see a tissue section and only a fraction of the cells are stained, how can you tell which kind of cells are represented? We are seeking tools that can accurately make this connection and relate it to existing knowledge of cell types on Allen Brain Map.  Enter the MapMySections Data Challenge below by 12:00pm (Pacific), on ????? ##, 2025.
+
+For more challenge details and data access, please visit [the MapMySections Challenge data page](https://github.com/AllenInstitute/MapMySections/edit/main/_pages/overview.markdown).
+
+## Entry Details
+
+To be considered for the competition, please submit ***[AT ???? LINK]***: 1) cell type assignments for each query image series, 2) the tool (or a link to the tool) for computing and displaying these results, and 3) the names and contact information of yourself and anyone on your team.  More details at [the MapMySections Challenge data page](https://github.com/AllenInstitute/MapMySections/edit/main/_pages/overview.markdown).
+
+If you have any difficulties with submission, please contact Rachel Hostetler ***[hyperlink]***
+
+Participants will be scored based on two components, with a winner selected for each category independently:
+1. **Mapping accuracy**: This winning algorithm for this category will be selected based on a quantitative assessment of accuracy to the whole mouse brain cell types from Yao et al 2023, included in the ABC Atlas.
+2. **Summarization of results**: Creation of a user-friendly tool that allows users to apply a mapping algorithm to query STPT images and receive most likely cell type results as output. This tool will optionally connect output results back to the ABC Atlas or other Allen Brain Map knowledge of cell types in some way. The definition of tool is intentionally left open, but some examples could include a website, an interactive table, or an R Studio or Jupyter notebook.  This winner will be selected by a panel of judges who will be grading on the following criteria: (1) usability (does it do something), (2) ease of use (can I figure out how to use it easily), (3) functionality (does the output make sense), and (4) sleekness (does it look cool and make you want to use it). ***[NOTE: this part probably needs to be changed].***
+
+### Incentives for entry (TO BE EDITED)
+
+Winners will have an opportunity to present their work at a to-be-scheduled webinar and will have their tool featured on Allen Brain Map (brain-map.org).  Other tools may also be included on Allen Brain Map and all participants agree to have their submissions publicly linked at Allen Brain Map.  ***[NOTE: WE STILL NEED TO ACTUALLY DECIDE ON THE PRIZE. Publication? Presentation? Entry to workshop? Something else?]***
+
+Other possibilities:
+*	We will try and design enhancers specifically for the winning group?
+*	Just a paper led by the winner on their algorithm?
+*	Featuring resources on GTA?
+*	Guaranteed entry into a future Allen Institute workshop?
+*	Part of a future publication on GTA?
+
+
+## Background
 
 The [Genetics Tools Atlas](https://portal.brain-map.org/genetic-tools/genetic-tools-atlas) is a searchable web tool representing information and data on enhancer-adeno-associated viruses (enhancer AAVs) and mouse transgenes. The characterization data include Epifluorescence imaging (EPI), Serial Two-Photon Tomography (STPT), and Single Cell/Single Nucleus RNA-sequencing generated at the Allen Institute for Brain Science.  These genetic tools have been published in several peer-reviewed manuscripts, and are largely available on [Addgene](https://www.addgene.org/collections/brain-armamentarium/) (as part of the BRAIN Armamentarium Collection of plasmids and viral preps) or at [The Jackson Laboratory](https://www.jax.org/jax-mice-and-services/find-and-order-jax-mice/most-popular-jax-mice-strains/strain-collections) (transgenic mice).
 

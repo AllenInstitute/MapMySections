@@ -91,12 +91,20 @@ Spatial data and associated metadata can be accessed for off-line use in the fol
 
 **[⬆ back to top](#mapmysections)**
 
-### Useful links
+## Useful links
 
-* Genetics Tools Atlas: https://portal.brain-map.org/genetic-tools/genetic-tools-atlas 
-* ABC Atlas: https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas 
-* MapMyCells: https://portal.brain-map.org/atlases-and-data/bkp/mapmycells 
-* MapMySpikes: https://alleninstitute.org/events/mapmyspikes/ 
-* <ins>***(LIKELY NEED MANY MORE, TBD). Maybe links to relevant CCF community forum posts and or external tools (Priya's project)?***</ins>
+**Atlases related to this challenge**:
+* **Genetics Tools Atlas**: https://portal.brain-map.org/genetic-tools/genetic-tools-atlas 
+* **ABC Atlas**: https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas 
+* **MapMyCells**: https://portal.brain-map.org/atlases-and-data/bkp/mapmycells
+
+**Strategies for aligning tissues sections to the Allen CCF**:
+* [This Allen Brain Map **Community Forum post**](https://community.brain-map.org/t/mouse-brain-reference-atlases-mapping-your-own-data/243) lists several community tools (as of 2019) for mapping images to our reference atlas.
+* A subset of this more recent (2023) [list of **Community Tools**](https://portal.brain-map.org/explore/toolkit/community-tools/computational-tools/data-registration-tools) related to computational image registration to CCF. 
+
+**Other relevant links**:
+* **MapMySpikes**: https://alleninstitute.org/events/mapmyspikes/ : This was last year's data challenge focused on using electrophysiology data to define transcriptomic cell types.
+* [**Scientific preprint**](https://pmc.ncbi.nlm.nih.gov/articles/PMC11195086/) highlighting the genetic tools included in this data challenge.
+* <ins>***(LIKELY NEED MANY MORE, TBD)***</ins>
 
 **[⬆ back to top](#mapmysections)**

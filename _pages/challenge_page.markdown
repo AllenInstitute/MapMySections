@@ -17,11 +17,11 @@ When you see a tissue section and only a fraction of the cells are stained, how 
 
 When you see a tissue section and only a fraction of the cells are stained, how can you tell which kind of cells are represented? We are seeking tools that can accurately make this connection and relate it to existing knowledge of cell types on Allen Brain Map.  Enter the MapMySections Data Challenge below by 12:00pm (Pacific), on ????? ##, 2025.
 
-For more challenge details and data access, please visit [the MapMySections Challenge data page](https://github.com/AllenInstitute/MapMySections/edit/main/_pages/overview.markdown).
+For more challenge details and data access, please visit [the MapMySections Challenge data page](https://github.com/AllenInstitute/MapMySections/blob/main/_pages/overview.markdown).
 
 ## Entry Details
 
-To be considered for the competition, please submit ***[AT ???? LINK]***: 1) cell type assignments for each query image series, 2) the tool (or a link to the tool) for computing and displaying these results, and 3) the names and contact information of yourself and anyone on your team.  More details at [the MapMySections Challenge data page](https://github.com/AllenInstitute/MapMySections/edit/main/_pages/overview.markdown).
+To be considered for the competition, please submit ***[AT ???? LINK]***: 1) cell type assignments for each query image series, 2) the tool (or a link to the tool) for computing and displaying these results, and 3) the names and contact information of yourself and anyone on your team.  More details at [the MapMySections Challenge data page](https://github.com/AllenInstitute/MapMySections/blob/main/_pages/overview.markdown).
 
 If you have any difficulties with submission, please contact Rachel Hostetler ***[hyperlink]***
 

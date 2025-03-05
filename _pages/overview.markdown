@@ -9,11 +9,13 @@ When you see a tissue section and only a fraction of the cells are stained, how 
 ## Table of Contents 
 
 1. [About this Challenge](#about-this-challenge)
-2. [Primary image series data access](#primary-image-series-data-access)
-3. [Restricting analysis to targeted brain regions (typically VISp)](Restricting-analysis-to-targeted-brain-regions-typically-visp)
-4. [Spatial localization of mouse brain cell types](#spatial-localization-of-mouse-brain-cell-types)
-5. [Key considerations](#key-considerations)
-6. [Useful links](#useful-links)
+2. [Entry Details](#entry_details)
+3. [Primary image series data access](#primary-image-series-data-access)
+4. [Restricting analysis to targeted brain regions (typically VISp)](Restricting-analysis-to-targeted-brain-regions-typically-visp)
+5. [Spatial localization of mouse brain cell types](#spatial-localization-of-mouse-brain-cell-types)
+6. [Key considerations](#key-considerations)
+7. [Background](#background)
+8. [Useful links](#useful-links)
 
 ## About this Challenge
 
@@ -22,6 +24,20 @@ Transgenic lines and viral tools provide highly valuable resources for targeting
 ![image](https://github.com/user-attachments/assets/d0066c2f-c27a-4a32-96cc-44421550c7e4)
 
 This challenge includes images and associated cell type specificity for anonymized genetics tools from the [Genetics Tools Atlas](https://portal.brain-map.org/genetic-tools/genetic-tools-atlas), a searchable web resource representing information and data on enhancer-adeno-associated viruses (enhancer AAVs) and mouse transgenes. Multiple modalities for summarizing data are included as part of the atlas, but only coronal sections collected using Serial Two-Photon Tomography (STPT) sections will be directly included as part of the challenge.  Cell type specificity is assessed by applying single cell RNA-sequencing (SmartSeqV4) on fluorescently labeled cells from each genetic tool, and then mapping these cells to the published taxonomy of cell types in whole mouse brain [(Yao et al, 2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10719114/), which are available in the [Allen Brain Cell Atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas).
+
+**[⬆ back to top](#mapmysections)**
+
+## Entry Details
+
+To be considered for the competition, please submit ***[AT ???? LINK]***: 1) cell type assignments for each query image series, 2) the tool (or a link to the tool) for computing and displaying these results, and 3) your name and contact information. All submissions must be received by 12:00pm (Pacific), on ????? ##, 2025 to be considered for the competition.
+
+If you have any difficulties with submission, please [contact Rachel Hostetler](mailto:rachel.hostetler@alleninstitute.org).
+
+Participants will be scored based on two components, with a winner selected for each category independently:
+1. **Mapping accuracy**: This winning algorithm for this category will be selected based on a quantitative assessment of accuracy of mapping to the whole mouse brain cell types from Yao et al 2023, included in the ABC Atlas.
+2. **Summarization of results**: Creation of a user-friendly tool that allows users to input one or more query STPT image, apply the submitted mapping algorithm, and then receive the most likely cell type results as output. This tool will optionally connect output results back to the [Allen Brain Cell Atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas) or other Allen Brain Map knowledge of cell types in some way. The definition of tool is intentionally left open, but some examples could include a website, an interactive table, a downloadable softeware package, or an R Studio or Jupyter notebook.  This winner will be selected by a panel of judges who will be grading on the following criteria: (1) usability (does it do something), (2) ease of use (can I figure out how to use it easily), (3) functionality (does the output make sense), and (4) sleekness (does it look cool and make you want to use it). The accuracy of mapping is not considered in this category.
+
+Winners will have an opportunity to present their work at a to-be-scheduled webinar and will have their tool featured on Allen Brain Map (brain-map.org). All entrants agree to have their submissions publicly linked at Allen Brain Map.  Entrants may also be contacted for potential follow-up opportunities such as collaborative science or inclusion of tools in Allen Institute data work flows. 
 
 **[⬆ back to top](#mapmysections)**
 
@@ -52,13 +68,13 @@ Other columns ***TO BE OMITTED BEFORE POSTING***:
 * **Cell Type Additional Information**: Any other “secret” information we have about cell type specificity based on expert manual annotations in the “Brain Regions Targeted” or anywhere else in the brain.  This can be blank for most of the genetic tools.
 * **High Importance Tool**: Slot for Yoav, Jonathan, Deepanjali, or anyone else to indicate whether this genetic tool is of high importance.  Ideally this will include 3-5 genetic tools per person.  Write you name in this slot if you want to include this. Any tool in this category will be included in the challenge as part of the “Test data set”, but may or may not be scored. 
 
-The test data set includes the same information as the training data set for an additional ***(#####)*** genetic tools, except that the column called “Cell Type Assignments” is left blank.  To complete this challenge, please submit cell type assignments as described in the Entry Details section.
+The test data set includes the same information as the training data set, except that the column called “Cell Type Assignments” is left blank.  **To complete part one of this challenge, please submit these cell type assignments as described in the Entry Details section.**
 
 **[⬆ back to top](#mapmysections)**
 
 ## Restricting analysis to targeted brain regions (typically VISp)
 
-Unless otherwise noted, the challenge focuses only on cell types in VISp, although a few bonus tools focused on basal ganglia and across the whole brain are provided.  A few resources are provided to help entrants restrict their analyses to specific brain regions (and which may also aid in completing the challenge!):
+Unless otherwise noted, the challenge focuses only on cell types in primary visual cortex (VISp), although a few bonus tools focused on basal ganglia and across the whole brain are provided.  A few resources are provided to help entrants restrict their analyses to specific brain regions (and which may also aid in completing the challenge!):
 
 * **Image registration to Allen Common Coordinate Framework (CCF)**:  All STPT image series are registered to the CCF, meaning that every X-Y-Z location in STPT images can be assigned an X-Y-Z location (“voxel”) in a standard anatomical reference space along with an associated brain region name. Similarly, MERFISH image series on the [Allen Brain Cell Atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas) are also registered to the CCF, meaning each voxel also contains it’s cell type composition (from one mouse).  More details on CCF registration and data access are available <ins>***TBD TBD TBD***</ins>.
 * **Known spatial localization of cell types**: The relationship between cell types and brain regions and cell types (including VISp) is described in detail in [Yao et al 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10719114/).  These relationships can also be explored interactively using [Annotation Comparison Explorer](https://sea-ad.shinyapps.io/ACEapp/) (“Mouse cell type classification” - “Spatial localization of brain cell types”).  Finally, a table listing all cell types found in mouse VISp is provided <ins>***TBD TBD TBD***</ins>.
@@ -88,6 +104,16 @@ Spatial data and associated metadata can be accessed for off-line use in the fol
 * Genetic tools can label any number of cell types across the taxonomy
 * Weak vs. strong labeling sometimes
 * We are sidestepping the challenge of aligning individual images to the MERFISH reference as all challenge data includes Z-stack information
+
+**[⬆ back to top](#mapmysections)**
+
+## Background
+
+The [Genetics Tools Atlas](https://portal.brain-map.org/genetic-tools/genetic-tools-atlas) is a searchable web tool representing information and data on enhancer-adeno-associated viruses (enhancer AAVs) and mouse transgenes. The characterization data include Epifluorescence imaging (EPI), Serial Two-Photon Tomography (STPT), and Single Cell/Single Nucleus RNA-sequencing generated at the Allen Institute for Brain Science.  These genetic tools have been published in several peer-reviewed manuscripts, and are largely available on [Addgene](https://www.addgene.org/collections/brain-armamentarium/) (as part of the BRAIN Armamentarium Collection of plasmids and viral preps) or at [The Jackson Laboratory](https://www.jax.org/jax-mice-and-services/find-and-order-jax-mice/most-popular-jax-mice-strains/strain-collections) (transgenic mice).
+
+The [Allen Brain Cell Atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas) provides a platform for visualizing multimodal single cell data across the mammalian brain and aims to empower researchers to explore and analyze multiple whole-brain datasets simultaneously. This open science resource, developed by the Allen Institute as part of the Brain Knowledge Platform, allows unprecedented insights into the enormous diversity of cell types in the brain and where they are. As the Allen Institute and its collaborators continue to add new modalities, species, and insights to the ABC Atlas, this groundbreaking platform will keep growing, opening up endless possibilities for discoveries and breakthroughs in neuroscience. The ABC Atlas enables the neuroscience community to identify more cell types in the brain, investigate the spatial location of cell types, investigate gene expression and co-expression patterns in cell types, and refine boundaries and knowledge of brain regions defined by gene expression.
+
+Allen Brain Map and BICCN have tools for allowing scientists to compare their gene expression data with cell types in motor cortex ([Azimuth](https://azimuth.hubmapconsortium.org/); accessible via the [Cell Type Knowledge Explorer](https://knowledge.brain-map.org/celltypes)) and spanning the whole brain ([MapMyCells](https://portal.brain-map.org/atlases-and-data/bkp/mapmycells)).  These tools directly transfer (or “map”) cell type assignments to user-provided cells, also allowing a transfer of associated knowledge about that cell type.  For example, cells in motor cortex matching to Pvalb interneurons based on gene expression are also likely to be fast spiking and to have either basket or chandelier morphologies.  Similarly, putative spatial locations can be assigned to a cell collected from a dissociation protocol by mapping it to the whole mouse brain and then seeing where that cell is located using the [Allen Brain Cell Atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas).  Finally, by mapping cell type assignments to cells collected from individuals with Alzheimer’s disease (e.g., in [SEA-AD](https://portal.brain-map.org/explore/seattle-alzheimers-disease)) and other disorders, scientists can understand which cell types change and how they change in different states.  While other algorithms exist for mapping transcriptomics (and other ‘-omics’) data between reference cell types and query data, Azimuth and MapMyCells are web-based, making them accessible to researchers and students with a wide range of computational and biological competencies.  Last year’s data challenge, [MapMySpikes](https://alleninstitute.org/events/mapmyspikes/), asked participants to accurately make the connection between firing properties of a cell and the cell’s molecular type to relate it to existing knowledge of cell types on Allen Brain Map; otherwise, nearly all web-based mapping algorithms focus on gene expression.  MapMySections, like MapMySpikes, aims to extend the types of experimental data that can be aligned to transcriptomically-defined cell types. 
 
 **[⬆ back to top](#mapmysections)**
 

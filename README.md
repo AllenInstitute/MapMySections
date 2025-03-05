@@ -2,7 +2,7 @@
 
 When you see a tissue section and only a fraction of the cells are stained, how can you tell which kind of cells are represented? We are seeking tools that can accurately make this connection and relate it to existing knowledge of cell types on Allen Brain Map.  Enter the MapMySections Data Challenge [**ON THE MAIN EVENT PAGE**](https://github.com/AllenInstitute/MapMySections/blob/main/_pages/challenge_page.markdown) by 12:00pm (Pacific), on <ins>***XXXXX***</ins>, 2025. Challenge details below.
 
-![image](https://github.com/user-attachments/assets/effe7089-9125-41b1-bc0f-c99a29781885)
+![image](logo.png)
 
 *(This is a draft icon. Improve it, and then move it and the table of contents to the side bar when I figure out how to make a side bar.)*
 
@@ -21,7 +21,7 @@ When you see a tissue section and only a fraction of the cells are stained, how 
 
 Transgenic lines and viral tools provide highly valuable resources for targeting subpopulations of cells in the brain of mouse (and other species).  The recent identification of >5,000 mouse brain cell populations with distinct gene expression patterns and spatial profiles provides opportunities not only to create new cell type-specific genetic tools, but also to better characterize the cell type specificity of existing genetic tools widely used in neuroscience or newly generated in a lab. Accurately defining this connection between genetic tools and known cell types represents a critical step in interpreting the results of experiments using these tools, from functional assays to potential gene therapies. A detailed cell type characterization of the labeled cells can be achieved through a combination of single cell RNA-sequencing and cell sorting; however, such methods take time and costly and are prone to bias. A method for directly inferring cell types from fluorescent images without the need for additional experiments would be immediately applicable to thousands of existing genetic tools, greatly improving their utility and interpretability.  *Entrants are tasked with creating an algorithm that will accurately match fluorescent images to the most likely cell types and/or to present the algorithm as part of a user-friendly tool like [MapMyCells](https://portal.brain-map.org/atlases-and-data/bkp/mapmycells).*
 
-![image](https://github.com/user-attachments/assets/fb0576ab-8b84-4b55-9733-d936d4b23513)
+![image](workflow.png)
 
 This challenge includes images and associated cell type specificity for anonymized genetics tools from the [Genetics Tools Atlas](https://portal.brain-map.org/genetic-tools/genetic-tools-atlas), a searchable web resource representing information and data on enhancer-adeno-associated viruses (enhancer AAVs) and mouse transgenes. Multiple modalities for summarizing data are included as part of the atlas, but only coronal sections collected using Serial Two-Photon Tomography (STPT) sections will be directly included as part of the challenge.  Cell type specificity is assessed by applying single cell RNA-sequencing (SmartSeqV4) on fluorescently labeled cells from each genetic tool, and then mapping these cells to the published taxonomy of cell types in whole mouse brain [(Yao et al, 2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10719114/), which are available in the [Allen Brain Cell Atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas).
 

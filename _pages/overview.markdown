@@ -1,3 +1,11 @@
+# THIS IS AN OLD PAGE.  PLEASE DISREGARD!
+
+# THIS IS AN OLD PAGE.  PLEASE DISREGARD!
+
+# THIS IS AN OLD PAGE.  PLEASE DISREGARD!
+
+# THIS IS AN OLD PAGE.  PLEASE DISREGARD!
+
 ## MapMySections
 
 When you see a tissue section and only a fraction of the cells are stained, how can you tell which kind of cells are represented? We are seeking tools that can accurately make this connection and relate it to existing knowledge of cell types on Allen Brain Map.  Enter the MapMySections Data Challenge [**ON THE MAIN EVENT PAGE**](https://github.com/AllenInstitute/MapMySections/blob/main/_pages/challenge_page.markdown) by 12:00pm (Pacific), on <ins>***XXXXX***</ins>, 2025. Challenge details below.

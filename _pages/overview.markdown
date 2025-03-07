@@ -6,13 +6,11 @@
 
 # THIS IS AN OLD PAGE.  PLEASE DISREGARD!
 
-## MapMySections
+# MapMySections Data Challenge
 
-When you see a tissue section and only a fraction of the cells are stained, how can you tell which kind of cells are represented? We are seeking tools that can accurately make this connection and relate it to existing knowledge of cell types on Allen Brain Map.  Enter the MapMySections Data Challenge [**ON THE MAIN EVENT PAGE**](https://github.com/AllenInstitute/MapMySections/blob/main/_pages/challenge_page.markdown) by 12:00pm (Pacific), on <ins>***XXXXX***</ins>, 2025. Challenge details below.
+#### When you see a tissue section and only a fraction of the cells are stained, how can you tell which kind of cells are represented? The MapMySections Data Challenge aims to address this question! Challenge details below.
 
-![image](https://github.com/user-attachments/assets/effe7089-9125-41b1-bc0f-c99a29781885)
-
-*(This is a draft icon. Improve it, and then move it and the table of contents to the side bar when I figure out how to make a side bar.)*
+<img src="logo.png" alt="image" width="300">:
 
 ## Table of Contents 
 
@@ -27,9 +25,9 @@ When you see a tissue section and only a fraction of the cells are stained, how 
 
 ## About this Challenge
 
-Transgenic lines and viral tools provide highly valuable resources for targeting subpopulations of cells in the brain of mouse (and other species).  The recent identification of >5,000 mouse brain cell populations with distinct gene expression patterns and spatial profiles provides opportunities not only to create new cell type-specific genetic tools, but also to better characterize the cell type specificity of existing genetic tools widely used in neuroscience or newly generated in a lab. Accurately defining this connection between genetic tools and known cell types represents a critical step in interpreting the results of experiments using these tools, from functional assays to potential gene therapies. A detailed cell type characterization of the labeled cells can be achieved through a combination of single cell RNA-sequencing and cell sorting; however, such methods take time and costly and are prone to bias. A method for directly inferring cell types from fluorescent images without the need for additional experiments would be immediately applicable to thousands of existing genetic tools, greatly improving their utility and interpretability.  *Entrants are tasked with creating an algorithm that will accurately match fluorescent images to the most likely cell types and/or to present the algorithm as part of a user-friendly tool like [MapMyCells](https://portal.brain-map.org/atlases-and-data/bkp/mapmycells).*
+Transgenic lines and viral tools provide highly valuable resources for targeting subpopulations of cells in the brain of mouse (and other species).  The recent identification of >5,000 mouse brain cell populations with distinct gene expression patterns and spatial profiles provides opportunities not only to create new cell type-specific genetic tools, but also to better characterize the cell type specificity of existing genetic tools widely used in neuroscience or newly generated in a lab. Accurately defining this connection between genetic tools and known cell types represents a critical step in interpreting the results of experiments using these tools, from functional assays to potential gene therapies. A detailed cell type characterization of the labeled cells can be achieved through a combination of single cell RNA-sequencing and cell sorting; however, such methods take time and costly and are prone to bias. A method for directly inferring cell types from fluorescent images without the need for additional experiments would be immediately applicable to thousands of existing genetic tools, greatly improving their utility and interpretability.  ***Entrants are tasked with creating an algorithm that will accurately match fluorescent images to the most likely cell types and/or to present the algorithm as part of a user-friendly tool like [MapMyCells](https://portal.brain-map.org/atlases-and-data/bkp/mapmycells).*** Although images span the whole brain, this challenge is focused on defining cell types in primary visual cortex (VISp).
 
-![image](https://github.com/user-attachments/assets/d0066c2f-c27a-4a32-96cc-44421550c7e4)
+![image](workflow.png)
 
 This challenge includes images and associated cell type specificity for anonymized genetics tools from the [Genetics Tools Atlas](https://portal.brain-map.org/genetic-tools/genetic-tools-atlas), a searchable web resource representing information and data on enhancer-adeno-associated viruses (enhancer AAVs) and mouse transgenes. Multiple modalities for summarizing data are included as part of the atlas, but only coronal sections collected using Serial Two-Photon Tomography (STPT) sections will be directly included as part of the challenge.  Cell type specificity is assessed by applying single cell RNA-sequencing (SmartSeqV4) on fluorescently labeled cells from each genetic tool, and then mapping these cells to the published taxonomy of cell types in whole mouse brain [(Yao et al, 2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10719114/), which are available in the [Allen Brain Cell Atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas).
 
@@ -80,9 +78,9 @@ The test data set includes the same information as the training data set, except
 
 **[⬆ back to top](#mapmysections)**
 
-## Restricting analysis to targeted brain regions (typically VISp)
+## Restricting analysis to primary visual cortex (VISp)
 
-Unless otherwise noted, the challenge focuses only on cell types in primary visual cortex (VISp), although a few bonus tools focused on basal ganglia and across the whole brain are provided.  A few resources are provided to help entrants restrict their analyses to specific brain regions (and which may also aid in completing the challenge!):
+**This challenge focuses only on cell types in primary visual cortex (VISp).**  A few resources are provided to help entrants restrict their analyses to specific brain regions (and which may also aid in completing the challenge!):
 
 * **Image registration to Allen Common Coordinate Framework (CCF)**:  All STPT image series are registered to the CCF, meaning that every X-Y-Z location in STPT images can be assigned an X-Y-Z location (“voxel”) in a standard anatomical reference space along with an associated brain region name. Similarly, MERFISH image series on the [Allen Brain Cell Atlas](https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas) are also registered to the CCF, meaning each voxel also contains it’s cell type composition (from one mouse).  More details on CCF registration and data access are available <ins>***TBD TBD TBD***</ins>.
 * **Known spatial localization of cell types**: The relationship between cell types and brain regions and cell types (including VISp) is described in detail in [Yao et al 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10719114/).  These relationships can also be explored interactively using [Annotation Comparison Explorer](https://sea-ad.shinyapps.io/ACEapp/) (“Mouse cell type classification” - “Spatial localization of brain cell types”).  Finally, a table listing all cell types found in mouse VISp is provided <ins>***TBD TBD TBD***</ins>.
@@ -96,7 +94,7 @@ The mouse whole brain transcriptomics cell type atlas contains 5,322 cell types 
 In addition to gene tools image series, cell type information from this atlas **is required or recommended to succeed in this challenge**. The spatial location of every mouse cell type can be interactively explored using the Allen Brain Cell Atlas [at this link](https://knowledge.brain-map.org/abcatlas#AQIBSzlKTjIzUDI0S1FDR0s5VTc1QQACSFNZWlBaVzE2NjlVODIxQldZUAADAAQBAAKDgDx7g46YHgOEuBCEhSrCAwQyTlFUSUU3VEFNUDhQUUFITzRQAAWBr6ZKgemsDoGggUeAktXoBgAHAAAFAAYBAQJGUzAwRFhWMFQ5UjFYOUZKNFFFAAN%2BAAAABAAACFZGT0ZZUEZRR1JLVURRVVozRkYACUxWREJKQVc4Qkk1WVNTMVFVQkcACgALAVRMT0tXQ0w5NVJVMDNEOVBFVEcAAjczR1ZURFhERUdFMjdNMlhKTVQAAwEEAQACIzAwMDAwMAADyAEABQEBAiMwMDAwMDAAA8gBAAAAAUFQOEpOTjVMWUFCR1ZNR0tZMUIAAlExTkNXV1BHNkZaMEROSVhKQlEAAwAEAQECgazlhIG8aWIDhMwEVIT%2BMccABQAGAQECRlMwMERYVjBUOVIxWDlGSjRRRQADfgAAAAQAAAhHNEk0R0ZKWEpCOUFUWjNQVFgxAAlMVkRCSkFXOEJJNVlTUzFRVUJHAAoACwFub25lAAJub25lAAMBBAEAAiMwMDAwMDAAA8gBAAUBAQIjMDAwMDAwAAPIAQAAAAIDAA%3D%3D). 
 
 Spatial data and associated metadata can be accessed for off-line use in the following locations:
-* **MERFISH raw data images**: ***I don't know if these exist??? If so, would be useful to share.***
+* **MERFISH raw data images**: Data from MERFISH experiments can be found in the [Brain Image Library (BIL) here](https://doi.brainimagelibrary.org/doi/10.35077/g.610).  The relevant mouse has [ID=638850](https://download.brainimagelibrary.org/aa/79/aa79b8ba5b3add56/638850/).
 * **CCF locations of mouse brain cells**: Point-by-point mapping of the location of each cell in the original MERFISH coordinate space and the CCF [**is available here**](https://alleninstitute.github.io/abc_atlas_access/descriptions/MERFISH-C57BL6J-638850-CCF.html). These data include cell type assignments for each cell, and this page also includes links to related data sets and to Jupyter notebooks for data access.
 * **Code comparing cell types and anatomic structures**: Specifically, [this Jupyter notebook](https://alleninstitute.github.io/abc_atlas_access/notebooks/merfish_ccf_registration_tutorial.html) describes how to access and use the data above, relating CCF coordinates and mouse brain cell types.
 * **Acronym list**: [This table](https://brainmapportal-live-4cc80a57cd6e400d854-f7fdcae.divio-media.net/filer_public/c8/42/c8421c8e-72d8-4781-8505-8770e88671a7/whole_mouse_brain_acronym_june_2024.xlsx) includes a list of acronyms and abbreviations for brain regions, genes, and cell types used in mouse whole brain cluster names, along with identifiers for relevant data sources (e.g., Mouse Brain Atlas, UBERON, CL).
@@ -139,6 +137,6 @@ Allen Brain Map and BICCN have tools for allowing scientists to compare their ge
 **Other relevant links**:
 * **MapMySpikes**: https://alleninstitute.org/events/mapmyspikes/ : This was last year's data challenge focused on using electrophysiology data to define transcriptomic cell types.
 * [**Scientific preprint**](https://pmc.ncbi.nlm.nih.gov/articles/PMC11195086/) highlighting the genetic tools included in this data challenge.
-* <ins>***(LIKELY NEED MANY MORE, TBD)***</ins>
 
 **[⬆ back to top](#mapmysections)**
+

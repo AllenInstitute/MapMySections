@@ -29,6 +29,7 @@
             overflow-y: auto; /* Add scroll if content is too long */
             height: 100vh; /* Make main content full height */
 			border: 1px solid #ccc; /* Example border */
+			color: #003057;
         }
 
         .sidebar ul {
@@ -42,7 +43,7 @@
 
         .sidebar a {
             text-decoration: none;
-            color: #333;
+            color: #003057;
         }
 		
 		hr {
@@ -111,8 +112,8 @@
 		<li><strong>MapMySectionsID</strong>: A unique, anonymized identifier for each experiment. These identifiers will be linked to actual experiment identifiers in the <a href="https://portal.brain-map.org/genetic-tools/genetic-tools-atlas">Genetics Tools Atlas</a> at the conclusion of the challenge.</li>
 		<li><strong>Data Set</strong>: Either “Training” to indicate this experiment is part of the training data set or “Test” to indicate it is part of the test data set (in which case “Cell Type Assignments” will be blank)</li>
 		<li><strong>Genetic Tools Type</strong>: Either “Enhancer AAV” or “Mouse transgenic line” to indicating the underlying type of genetic tool. Note that the training and test data sets each include some enhancer AAVs and some mouse transgenic lines.</li>
-		<li><strong>STPT Data File Path</strong>: Link to the image series in omi-zarr format. This is the primary data required for the challenge. See <ins><strong><a href="[THIS LINK TO A NEW JUPYTER NOTEBOOK]">THIS LINK TO A NEW JUPYTER NOTEBOOK</a></strong></ins> for how to access and use these data.</li>
-		<li><strong>Neuroglancer File Path</strong>: Link to same data for visualization using Neuroglancer</li>
+		<li><strong>STPT Data File Path</strong>: Link to the image series in omi-zarr format. This is the primary data required for the challenge. See the <a href="#links">Useful links</a> section below for resources showing how to access and use these data.</li>
+		<li><strong>Neuroglancer File Path</strong>: Link to same data for visualization using Neuroglancer.  See the <a href="#links">Useful links</a> section below for resources showing how to use Neuroglancer.</li>
 		<li><strong>CCF Regististered Image File Path</strong>: Link to image file containing intensities of red and green channels for each 25um CCF voxel in <strong>XXX????XXXX</strong> format. See <ins><strong><a href="[THIS LINK TO A DIFFERENT NEW JUPYTER NOTEBOOK]">THIS LINK TO A DIFFERENT NEW JUPYTER NOTEBOOK</a></strong></ins> for how to access and use these data.</li>
 		<li><strong>Target_Cell_Population</strong>: Cell populations targeted with this experiment. <i><b>Note: This is not necessarily the cell populations actually identified!</b></i></li>
 	    <li><strong>Qualitative Image Assessment</strong>: Sets of comma-separated qualitative assessments for labeling strength, labeling density, and labeled cell populations made based on review of epifluorescence image data for the same genetic tool. In cases where more than one assessment is included, cells from all of the listed types were labeled.  Note that a value of "Neuron" indicates that the specific neuronal populations targeted could not be accurately assessed in that experiment.</li>
@@ -170,17 +171,24 @@
 
         <h2 style="color: #003057;" id="links"><i class="fas fa-brain"></i> Useful links</h2 style="color: #003057;">
 		
+		<p><strong>Working with large image files:</strong></p>
+		<ul>
+		<li><a href="https://community.brain-map.org/t/tutorial-finding-aavs-for-targeting-cholinergic-cell-populations-in-the-striatum/3673">This Allen Brain Map Community Forum post</a> describes some basic Neuroglancer functionality.</li>
+		<li><a href="https://alleninstitute.github.io/microns_tutorial/em_04_neuroglancer.html">This MICrONs tutorial</a> goes into a bit more depth about how to use Neuroglancer.</li>
+		<li><a href="https://link.springer.com/article/10.1007/s00418-023-02209-1">This open-access manuscript</a> describes the OME-Zarr format in detail. </li>
+		</ul>
+
+		<p><strong>Strategies for aligning tissues sections to the Allen CCF:</strong></p>
+		<ul>
+		<li><a href="https://community.brain-map.org/t/mouse-brain-reference-atlases-mapping-your-own-data/243">This Allen Brain Map <strong>Community Forum post</strong></a> lists several community tools (as of 2019) for mapping images to our reference atlas.</li>
+		<li>A subset of this more recent (2023) <a href="https://portal.brain-map.org/explore/toolkit/community-tools/computational-tools/data-registration-tools">list of <strong>Community Tools</strong></a> related to computational image registration to CCF.</li>
+		</ul>
+		
 		<p><strong>Atlases related to this challenge:</strong></p>
 		<ul>
 		<li><strong>Genetics Tools Atlas</strong>: <a href="https://portal.brain-map.org/genetic-tools/genetic-tools-atlas">https://portal.brain-map.org/genetic-tools/genetic-tools-atlas</a></li>
 		<li><strong>ABC Atlas</strong>: <a href="https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas">https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas</a></li>
 		<li><strong>MapMyCells</strong>: <a href="https://portal.brain-map.org/atlases-and-data/bkp/mapmycells">https://portal.brain-map.org/atlases-and-data/bkp/mapmycells</a></li>
-		</ul>
-		
-		<p><strong>Strategies for aligning tissues sections to the Allen CCF:</strong></p>
-		<ul>
-		<li><a href="https://community.brain-map.org/t/mouse-brain-reference-atlases-mapping-your-own-data/243">This Allen Brain Map <strong>Community Forum post</strong></a> lists several community tools (as of 2019) for mapping images to our reference atlas.</li>
-		<li>A subset of this more recent (2023) <a href="https://portal.brain-map.org/explore/toolkit/community-tools/computational-tools/data-registration-tools">list of <strong>Community Tools</strong></a> related to computational image registration to CCF.</li>
 		</ul>
 		
 		<p><strong>Other relevant links:</strong></p>

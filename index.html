@@ -9,7 +9,7 @@
             font-family: sans-serif;
             margin: 0;
             display: flex; /* Use flexbox for layout */
-			line-height: 1.6; /* Adjust as needed  */
+			line-height: 1.6; /* Adjust as needed */
         }
 
         .sidebar {
@@ -94,7 +94,7 @@
 		<p>Participants will be scored based on three components, with a winner selected for each category independently:</p>
 		<ol>
 		<li><strong>Mapping accuracy</strong>: This winning algorithm for this category will be selected based on a quantitative assessment of accuracy of mapping to the whole mouse brain cell types from Yao et al 2023 included in the Allen Brain Cell Atlas at the "subclass" level of the hierarchy. Successful submissions will complete the mapping accuracy table that has one row for each test genetic tool and one column for each subclass found in VISp. Entries should represent the predicted fraction of cells mapping to a given subclass (e.g., rows sum to 1).</li>
-		<li><strong>Utility of the tool</strong>: Creation of a user-friendly tool that allows users to input one or more query STPT image, apply the submitted mapping algorithm, and then receive the most likely cell type results as output. This tool will optionally connect output results back to the <a href="https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas">Allen Brain Cell Atlas</a> or other Allen Brain Map knowledge of cell types in some way. The definition of tool is intentionally left open, but some examples could include a website, an interactive table, a downloadable softeware package, or an R Studio or Jupyter notebook. This winner will be selected by a panel of judges who will be grading on the following criteria: (1) usability (does it do something), (2) ease of use (can I figure out how to use it easily), (3) functionality (does the output make sense), and (4) sleekness (does it look cool and make you want to use it). The accuracy of mapping is not considered in this category.</li>
+		<li><strong>Utility of the tool</strong>: Creation of a user-friendly tool that allows users to input one or more query STPT image, apply the submitted mapping algorithm, and then receive the most likely cell type results as output. This tool will optionally connect output results back to the <a href="https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas">Allen Brain Cell Atlas</a> or other Allen Brain Map knowledge of cell types in some way. The definition of tool is intentionally left open, but some examples could include a website, an interactive table, a downloadable software package, or an R Studio or Jupyter notebook. This winner will be selected by a panel of judges who will be grading on the following criteria: (1) usability (does it do something), (2) ease of use (can I figure out how to use it easily), (3) functionality (does the output make sense), and (4) sleekness (does it look cool and make you want to use it). The accuracy of mapping is not considered in this category.</li>
 		</ol>
 		
 		<p>While not explicitly assessed for accuracy, <b><i>we encourage entrants to map to more refined levels of the cell type hierarchy (e.g., supertype, cluster) and/or to brain regions outside of VISp</b></i>. Broader mapping would improve the utility of the tool (second category) and would be considered in the unlikely event of a tie for mapping accuracy (first category).</p>  
@@ -104,9 +104,9 @@
 		<br><hr>
 
         <h2 style="color: #003057;" id="data_access"><i class="fas fa-brain"></i> Primary image series data access</h2 style="color: #003057;">
-        <p>Images are divided into a training data set with <ins><strong><em>XXXXX</em></strong></ins> genetic tools (where cell type assignments are provided) and a test data set with <ins><strong><em>XXXXX</em></strong></ins> genetic tools (where entrants are asked to predict cell type assignments). STPT image series and associated metadata are included for each genetic tool. This information is provided as an interactive BioFileFinder (BFF) spreadsheet.</p>
+        <p>Images are divided into a training data set with <ins><strong><em>248</em></strong></ins> genetic tools (where cell type assignments are provided) and a test data set with <ins><strong><em>248</em></strong></ins> genetic tools (where entrants are asked to predict cell type assignments). STPT image series and associated metadata are included for each genetic tool. This information is provided as an interactive BioFileFinder (BFF) spreadsheet.</p>
 		
-		<p><strong><a href="[ACCESS THE TEST AND TRAINING DATA HERE]">ACCESS THE TEST AND TRAINING DATA HERE</a></strong> &lt;-- need to create this BioFileFinder (BFF) spreadsheet</p>
+		<p><strong><a href="[ACCESS THE TEST AND TRAINING DATA HERE]">ACCESS THE TEST AND TRAINING DATA HERE [TO LINK OUT TO BioFile Finder SOON]</a></strong> &lt;-- need to create this BioFileFinder (BFF) spreadsheet</p>
 		
 		<p>In this spreadsheet, each row is a different genetic tool, and columns correspond to the following:</p>
 		
@@ -114,10 +114,10 @@
 		<li><strong>MapMySectionsID</strong>: A unique, anonymized identifier for each experiment. These identifiers will be linked to actual experiment identifiers in the <a href="https://portal.brain-map.org/genetic-tools/genetic-tools-atlas">Genetics Tools Atlas</a> at the conclusion of the challenge.</li>
 		<li><strong>Data Set</strong>: Either “Training” to indicate this experiment is part of the training data set or “Test” to indicate it is part of the test data set (in which case “Cell Type Assignments” will be blank)</li>
 		<li><strong>Genetic Tools Type</strong>: Either “Enhancer AAV” or “Mouse transgenic line” to indicating the underlying type of genetic tool. Note that the training and test data sets each include some enhancer AAVs and some mouse transgenic lines.</li>
-		<li><strong>STPT Data File Path</strong>: Link to the image series in omi-zarr format. This is the primary data required for the challenge. See the <a href="#links">Useful links</a> section below for resources showing how to access and use these data.</li>
+		<li><strong>STPT Data File Path</strong>: Link to the image series in OME-Zarr format. This is the primary data required for the challenge. See the <a href="#links">Useful links</a> section below for resources showing how to access and use these data.</li>
 		<li><strong>STPT Thumbnail Image</strong>: Link to a small thumbnail image of one section of the genetic tool that intersects VISp for quick viewing. These are potentially useful as a sanity check of algorithm results or for inclusion in user-created tools.</li>
 		<li><strong>Neuroglancer File Path</strong>: Link to same data for visualization using Neuroglancer.  See the <a href="#links">Useful links</a> section below for resources showing how to use Neuroglancer.</li>
-		<li><strong>CCF Regististered Image File Path</strong>: Link to zip file containing quantified intensities of red and green channels for each 25um CCF voxel in the STPT image series. See <ins><strong><a href="[THIS LINK TO A DIFFERENT NEW JUPYTER NOTEBOOK]">THIS LINK TO A DIFFERENT NEW JUPYTER NOTEBOOK</a></strong></ins> for how to access and use these data.</li>
+		<li><strong>CCF Registered Image File Path</strong>: Link to zip file containing quantified intensities of red and green channels for each 25um CCF voxel in the STPT image series. See <ins><strong><a href="[THIS LINK TO A DIFFERENT NEW JUPYTER NOTEBOOK]">THIS LINK TO A DIFFERENT NEW JUPYTER NOTEBOOK</a></strong></ins> for how to access and use these data.</li>
 		<li><strong>Target_Cell_Population</strong>: Cell populations targeted with this experiment. <i><b>Note: This is not necessarily the cell populations actually identified!</b></i></li>
 	    <li><strong>Qualitative Image Assessment</strong>: Sets of comma-separated qualitative assessments for labeling strength, labeling density, and labeled cell populations made based on review of epifluorescence image data for the same genetic tool. In cases where more than one assessment is included, cells from all of the listed types were labeled. While these calls do not constitute quantitative validation, they are likely to reflect actual cell type assignments in cases when SMART-Seq v4 data is missing.  Note that a value of "Neuron" indicates that the specific neuronal populations targeted could not be accurately assessed in that experiment.</li>
 		<li><strong>(Quantitative Cell Type Assignments)</strong>: The remaining columns reflect quantitative cell type information from up to 48 cells from a given genetic tool collected using SMART-Seq v4 and aligned to whole mouse brain cell types from the Allen Brain Atlas (links above) at the "subclass" level of the hierarchy. <b><i>These columns represent the ground truth data to be targeted by computational algorithms (more details below).</b></i>. Numbers in these columns represent the count of cells from a given experiment that mapped to the corresponding subclass. </li>
@@ -130,7 +130,7 @@
 		
 		<ul>
 		<li><strong>Image registration to Allen Common Coordinate Framework (CCF)</strong>: A large majority of STPT image series are registered to the CCF, meaning that every X-Y-Z location in STPT images can be assigned an X-Y-Z location (“voxel”) in a standard anatomical reference space along with an associated brain region name. Similarly, MERFISH image series on the <a href="https://portal.brain-map.org/atlases-and-data/bkp/abc-atlas">Allen Brain Cell Atlas</a> are also registered to the CCF, meaning each voxel also contains it’s cell type composition (from one mouse). More details on CCF registration and data access for STPT is listed above. CCF registration and data access for MERFISH data can be found in <a href="https://alleninstitute.github.io/abc_atlas_access/descriptions/MERFISH-C57BL6J-638850-CCF.html">Jupyter notebooks accompanying the Allen Brain Cell Atlas</a>.</li>
-		<li><strong>Identifying subclasses in VISp</strong>: For the purposes of this challenge you can assume that all cells in VISp map to one of the subclasses listed in the "Quantitative Cell Type Assignments" columns described above. 
+		<li><strong>Identifying subclasses in VISp</strong>: For the purposes of this challenge you can assume that all cells in VISp map to one of the subclasses listed in the "Quantitative Cell Type Assignments" columns described above. A list of subclass, brain region, and all other <b>abbreviations</b> can be found <a href="https://brainmapportal-live-4cc80a57cd6e400d854-f7fdcae.divio-media.net/filer_public/c8/42/c8421c8e-72d8-4781-8505-8770e88671a7/whole_mouse_brain_acronym_june_2024.xlsx">at this link</a>.
 		<li><strong>Known spatial localization of cell types</strong>: The relationship between cell types and brain regions and cell types (including VISp) is described in detail in <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10719114/">Yao et al 2023</a>. These relationships can also be explored interactively using <a href="https://sea-ad.shinyapps.io/ACEapp/">Annotation Comparison Explorer</a> (“Mouse cell type classification” - “Spatial localization of brain cell types”).</li>
 		</ul>
 		
@@ -157,7 +157,7 @@
 		<ol>
 		<li>All images should have a single channel with signal. Signal in the channel with the least abundance can be ignored.</li>
 		<li>Genetic tools can label multiple cell types. In such genetic tools it is typically harder to identify labeled cell types than in ones when a single cell type is labeled.</li>
-		<li>It is typically more challenging distinguishing between GABAergic interneurons subtypes than between glutamergic and non-neuronal cell types.  For example, glutamatergic neurons tend to be highly localized by layer.</li>
+		<li>It is typically more challenging distinguishing between GABAergic interneurons subtypes than between glutamatergic and non-neuronal cell types.  For example, glutamatergic neurons tend to be highly localized by layer.</li>
 		<li>Some genetics tools have weaker labeling than others.</li>
 		<li>The Allen Brain Cell Atlas locations shown are cell centroids; however, genetic tools can label any cellular compartment.  The genetic tools in this challenge are cytoplasm reporters, which could potentially cause problems with dense labeling and cell overlap and make direct comparison a challenge.</li>
 		</ol>
@@ -177,6 +177,7 @@
 		
 		<p><strong>Working with large image files:</strong></p>
 		<ul>
+		<li><a href="https://cloudpathlib.drivendata.org/stable/">This python library</a> provides a convenient way to access data via an s3 bucket.</li>
 		<li><a href="https://community.brain-map.org/t/tutorial-finding-aavs-for-targeting-cholinergic-cell-populations-in-the-striatum/3673">This Allen Brain Map Community Forum post</a> describes some basic Neuroglancer functionality.</li>
 		<li><a href="https://alleninstitute.github.io/microns_tutorial/em_04_neuroglancer.html">This MICrONs tutorial</a> goes into a bit more depth about how to use Neuroglancer.</li>
 		<li><a href="https://link.springer.com/article/10.1007/s00418-023-02209-1">This open-access manuscript</a> describes the OME-Zarr format in detail. </li>
@@ -197,8 +198,9 @@
 		
 		<p><strong>Other relevant links:</strong></p>
 		<ul>
-		<li><strong>MapMySpikes</strong>: <a href="https://alleninstitute.org/events/mapmyspikes/">https://alleninstitute.org/events/mapmyspikes/</a> : This was last year's data challenge focused on using electrophysiology data to define transcriptomic cell types.</li>
-		<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11195086/"><strong>Scientific preprint</strong></a> highlighting the genetic tools included in this data challenge.</li>
+		<li><a href="https://portal.brain-map.org/help-and-community/guide-cell-types"><strong>Cell Type Support</strong></a>: An exhaustive list of Allen Institute's resources to help better understand cell types.
+		<li><a href="https://alleninstitute.org/events/mapmyspikes/"><strong>MapMySpikes</strong></a>: This was last year's data challenge focused on using electrophysiology data to define transcriptomic cell types.</li>
+		<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11195086/"><strong>Scientific Preprint</strong></a> highlighting the genetic tools included in this data challenge.</li>
 		</ul>
 
     </div>

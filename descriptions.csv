@@ -1,11 +1,11 @@
 Column Name,Description,Type
 File Name,"A unique, anonymized identifier for each experiment. These identifiers will be linked to actual experiment identifiers in the Genetics Tools Atlas at the conclusion of the challenge",
-Data Set,Whether the genetic tool is test or training,
-Genetics Tools Type,Either “Enhancer AAV” or “Mouse transgenic line” to indicating the underlying type of genetic tool. Note that the training and test data sets each include some enhancer AAVs and some mouse transgenic lines.,
+Data Set,Whether the genetic tool is part of the test or training set,
+Genetics Tools Type,The type of underyling genetic tool. Note that the training and test data sets each include some enhancer AAVs and some mouse transgenic lines.,
 File Path,Link to the image series in OME-Zarr format. This is the primary data required for the challenge. See Data Challenge page for resources showing how to access and use these data.,
 Thumbnail,Link to a small thumbnail image of one section of the genetic tool that intersects VISp for quick viewing. These are potentially useful as a sanity check of algorithm results or for inclusion in user-created tools.,
-Neuroglancer File Path,Link to same data for visualization using Neuroglancer. See Data Challenge page for resources showing how to use Neuroglancer.,Open file link
-CCF Registered Image File Path,Link to zip file containing quantified intensities of red and green channels for each 25um CCF voxel in the STPT image series.  See Data Challenge page for resources showing how to access and use these data.,Open file link
+Neuroglancer (Pre-Configured),Link to same data for visualization using Neuroglancer. See Data Challenge page for resources showing how to use Neuroglancer.,Open file link
+CCF Registered Image Download Link,Link to zip file containing quantified intensities of red and green channels for each 25um CCF voxel in the STPT image series.  See Data Challenge page for resources showing how to access and use these data.,Open file link
 Target_Cell_Population,Cell populations targeted with this experiment. Note: This is not necessarily the cell populations actually identified!,
 Qualitative Image Assessment,"Sets of comma-separated qualitative assessments for labeling strength, labeling density, and labeled cell populations made based on review of epifluorescence image data for the same genetic tool. In cases where more than one assessment is included, cells from all of the listed types were labeled. While these calls do not constitute quantitative validation, they are likely to reflect actual cell type assignments in cases when SMART-Seq v4 data is missing. Note that a value of ""Neuron"" indicates that the specific neuronal populations targeted could not be accurately assessed in that experiment.",
 ABC.NN,Number of ABC.NN cells found in SSv4 validation. Blank if no SSv4 validation performed.,

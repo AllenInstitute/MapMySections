@@ -88,6 +88,21 @@
     </div>
 
     <div class="main-content">
+	    <h2 style="color: #003057;" id="about"><i class="fas fa-brain"></i> Winners and solutions</h2 style="color: #003057;">
+		
+		<h3> <b>The MapMySections data challenge is complete, and winners have been selected!</b><br>
+		Information about all six data challenge entrants, including links to their algorithms and tools, and details about a webinar from challenge winners on August 27th, please <a href="https://alleninstitute.org/events/mapmysections/" target="_blank">visit the MapMySections landing page on alleninstitute.org</a>.</h3>
+		
+		
+		<p>Solutions for the test data set <a href="MapMySections_Solutions.xlsx" target="_blank"><b>are available at this link</a></b>. These values correspond to the blank entries from the "Test Set" sheet on <a href="https://github.com/AllenInstitute/MapMySections/raw/refs/heads/main/MapMySections_EntrantData.xlsx" target="_blank">the original challenge data and submission sheet</a>.</p> 
+		
+		<p>Applicants were graded both on mapping accuracy and utility of the tool (see <a href="#entry"> entry details below</a>).</p>
+		
+		<ol>
+		<li><strong>Mapping accuracy</strong>: The average rank of eight different scores for defining accuracy was used to determine the winner for this criterion. These scores assessed whether the predicted and actual distributions were similar (three scores), whether the most common cell type was identified (three scores), for how many subclasses an algorithm performed optimally, and (for tools without validation data) whether the targeted type was predicted. For more information, we provide both <a href="calculate_accuracy.r" target="_blank"><b>R code</b></a> and <a href="Method_for_calculating_accuracy.pdf" target="_blank"><b>a more detailed write-up</b></a> of this assessment.</li>
+		<li><strong>Utility of the tool</strong>: Four judges, including two with significant python coding experience, assessed the utility of the tool using <a href="rubric.jpg" target="_blank"><b>this rubric</b></a> to assess usability (counts double), ease of use, functionality, and sleekness. The winner was the entrant with the highest average score across the four judges.</li>
+		</ol>		
+	
         <h2 style="color: #003057;" id="about"><i class="fas fa-brain"></i> About this Challenge</h2 style="color: #003057;">
         <p>Transgenic lines and viral tools provide highly valuable resources for targeting subpopulations of cells in the brain of mouse (and other species). The recent identification of &gt;5,000 mouse brain cell populations with distinct gene expression patterns and spatial profiles provides opportunities not only to create new cell type-specific genetic tools, but also to better characterize the cell type specificity of existing genetic tools widely used in neuroscience or newly generated in a lab. Accurately defining this connection between genetic tools and known cell types represents a critical step in interpreting the results of experiments using these tools, from functional assays to potential gene therapies. A detailed cell type characterization of the labeled cells can be achieved through a combination of single cell RNA-sequencing and cell sorting; however, such methods take time, are costly, and are prone to bias. A method for directly inferring cell types from fluorescent images without the need for additional experiments would be immediately applicable to thousands of existing genetic tools, greatly improving their utility and interpretability. <b><em>Entrants are tasked with 1) creating an algorithm that will accurately match fluorescent images of genetic tools to the most likely spatial transcriptomic cell types and/or 2) presenting such an algorithm as part of a user-friendly tool like <a href="https://portal.brain-map.org/atlases-and-data/bkp/mapmycells" target="_blank">MapMyCells</a>.</em></b> Although images span the whole brain, this challenge is focused on defining cell types in primary visual cortex (VISp).</p>
 		
